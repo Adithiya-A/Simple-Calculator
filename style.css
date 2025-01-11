@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.calc{
+    margin: auto;
+    padding: 20px;
+    width: 550px;
+    height: 700px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 2rem;
+    box-shadow: inset 5px 5px 10px  #ffffff59,
+    inset -5px -5px 10px #ffffff59;
+}
+
+.calcin{
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    font-size: 30px;
+}
+
+#output{
+    grid-column: span 4;
+    height: 80px;
+    padding: 10px;
+    text-align: end;
+    font-size: 3rem;
+    margin: auto 10px;
+    border-radius: 2rem;
+    border: none;
+    background-color: rgba(82, 82, 82, 0.308);
+    color: white;
+    overflow: hidden;
+    box-shadow: inset -5px -5px 10px  #202020,
+    inset 5px 5px 10px  #ffffff4d;
+    
+}
+
+
+button{
+    font-family: sans-serif;
+    font-weight: bold;
+    height: 70px;
+    width: 70px;
+    border: none;
+    background-color: rgba(41, 41, 41, 0.308);
+    color: white;
+    box-shadow: -5px -5px 10px rgb(39, 39, 39),
+    5px 5px 10px  rgb(58, 58, 58);
+    border-radius: 2rem;
+}
+
+button:active{
+    background-color: rgba(82, 82, 82, 0.308);
+    color: turquoise;
+}
+
+.button{
+    border-radius: 50%;
+    margin: 8px;
+    margin-left: 20px;
+}
+
+.equal{
+    background-color: rgb(221, 144, 0);
+}
+
+.operator{
+    color: orange;
+}
+
+#clear{
+    color: red;
+}
+
+
+/* Mobile Version */
+
+@media only screen and (max-width: 425px) {
+    body{
+        width:410px;
+    }
+    .calc{
+        width: 400px;
+        height: 630px;
+    }
+
+    #output{
+        width: 370px;
+        margin-left: -5px;
+    }
+
+    .calcin{
+        font-size: 20px;
+        width: 400px;
+    }
+
+    .button{
+        height: 60px;
+        width: 60px;
+        margin-left: -5px;
+    }
+}
